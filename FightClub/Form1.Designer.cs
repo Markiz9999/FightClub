@@ -63,7 +63,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Comic Sans MS", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(531, 9);
+            this.label1.Location = new System.Drawing.Point(527, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(159, 67);
             this.label1.TabIndex = 0;
@@ -73,7 +73,7 @@
             // 
             this.round.AutoSize = true;
             this.round.Font = new System.Drawing.Font("Comic Sans MS", 28.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.round.Location = new System.Drawing.Point(696, 9);
+            this.round.Location = new System.Drawing.Point(678, 9);
             this.round.Name = "round";
             this.round.Size = new System.Drawing.Size(42, 67);
             this.round.TabIndex = 1;
@@ -85,7 +85,7 @@
             this.Name1.Font = new System.Drawing.Font("Comic Sans MS", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.Name1.Location = new System.Drawing.Point(196, 9);
             this.Name1.Name = "Name1";
-            this.Name1.Size = new System.Drawing.Size(68, 47);
+            this.Name1.Size = new System.Drawing.Size(67, 46);
             this.Name1.TabIndex = 2;
             this.Name1.Text = "Вы";
             // 
@@ -95,7 +95,7 @@
             this.Name2.Font = new System.Drawing.Font("Comic Sans MS", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.Name2.Location = new System.Drawing.Point(925, 9);
             this.Name2.Name = "Name2";
-            this.Name2.Size = new System.Drawing.Size(179, 47);
+            this.Name2.Size = new System.Drawing.Size(174, 46);
             this.Name2.TabIndex = 3;
             this.Name2.Text = "Компьтер";
             // 
@@ -146,7 +146,7 @@
             this.label5.Font = new System.Drawing.Font("Comic Sans MS", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(566, 76);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(112, 47);
+            this.label5.Size = new System.Drawing.Size(110, 46);
             this.label5.TabIndex = 9;
             this.label5.Text = "Судья";
             // 
@@ -231,7 +231,7 @@
             this.radioButton1.Font = new System.Drawing.Font("Comic Sans MS", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.radioButton1.Location = new System.Drawing.Point(117, 326);
             this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(158, 51);
+            this.radioButton1.Size = new System.Drawing.Size(156, 50);
             this.radioButton1.TabIndex = 17;
             this.radioButton1.TabStop = true;
             this.radioButton1.Text = "Голова";
@@ -245,7 +245,7 @@
             this.radioButton2.Font = new System.Drawing.Font("Comic Sans MS", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.radioButton2.Location = new System.Drawing.Point(117, 383);
             this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(158, 51);
+            this.radioButton2.Size = new System.Drawing.Size(155, 50);
             this.radioButton2.TabIndex = 18;
             this.radioButton2.TabStop = true;
             this.radioButton2.Text = "Корпус";
@@ -259,7 +259,7 @@
             this.radioButton3.Font = new System.Drawing.Font("Comic Sans MS", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.radioButton3.Location = new System.Drawing.Point(117, 440);
             this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(125, 51);
+            this.radioButton3.Size = new System.Drawing.Size(123, 50);
             this.radioButton3.TabIndex = 19;
             this.radioButton3.TabStop = true;
             this.radioButton3.Text = "Ноги";
@@ -277,7 +277,7 @@
             this.label3.Font = new System.Drawing.Font("Comic Sans MS", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label3.Location = new System.Drawing.Point(1012, 330);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(137, 47);
+            this.label3.Size = new System.Drawing.Size(135, 46);
             this.label3.TabIndex = 20;
             this.label3.Text = "Голова";
             // 
@@ -287,7 +287,7 @@
             this.label4.Font = new System.Drawing.Font("Comic Sans MS", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label4.Location = new System.Drawing.Point(1012, 387);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(137, 47);
+            this.label4.Size = new System.Drawing.Size(134, 46);
             this.label4.TabIndex = 21;
             this.label4.Text = "Корпус";
             // 
@@ -297,7 +297,7 @@
             this.label9.Font = new System.Drawing.Font("Comic Sans MS", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label9.Location = new System.Drawing.Point(1012, 444);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(104, 47);
+            this.label9.Size = new System.Drawing.Size(102, 46);
             this.label9.TabIndex = 22;
             this.label9.Text = "Ноги";
             // 
@@ -385,7 +385,6 @@
         private System.Windows.Forms.Label Name1;
         private System.Windows.Forms.Label Name2;
         private System.Windows.Forms.ProgressBar progressBar1;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.ProgressBar progressBar2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label5;
@@ -407,6 +406,7 @@
         private System.Windows.Forms.Label arrow2;
         private System.Windows.Forms.Label arrow3;
         private System.Windows.Forms.Timer timer2;
+        public System.Windows.Forms.TextBox textBox1;
     }
 }
 

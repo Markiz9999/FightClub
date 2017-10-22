@@ -9,7 +9,7 @@ namespace FightClub
     static class Program
     {
 
-        static Form1 form;
+        public static Form1 form;
 
         /// <summary>
         /// Главная точка входа для приложения.
