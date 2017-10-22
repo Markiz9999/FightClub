@@ -8,6 +8,9 @@ namespace FightClub
 {
     static class Program
     {
+
+        static Form1 form;
+
         /// <summary>
         /// Главная точка входа для приложения.
         /// </summary>
@@ -16,7 +19,8 @@ namespace FightClub
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            form = new Form1();
+            Application.Run(form);
         }
     }
 }
