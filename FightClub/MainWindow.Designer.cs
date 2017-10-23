@@ -1,6 +1,6 @@
 ﻿namespace FightClub
 {
-    partial class Form1
+    partial class MainWindow
     {
         /// <summary>
         /// Обязательная переменная конструктора.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainWindow));
             this.label1 = new System.Windows.Forms.Label();
             this.round = new System.Windows.Forms.Label();
             this.Name1 = new System.Windows.Forms.Label();
@@ -37,26 +37,26 @@
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.progressBar2 = new System.Windows.Forms.ProgressBar();
-            this.button1 = new System.Windows.Forms.Button();
+            this.StartButton = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.hp1 = new System.Windows.Forms.Label();
             this.hp2 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.Name12 = new System.Windows.Forms.Label();
+            this.Status1 = new System.Windows.Forms.Label();
+            this.Status2 = new System.Windows.Forms.Label();
+            this.Name22 = new System.Windows.Forms.Label();
+            this.HeadRadioButton = new System.Windows.Forms.RadioButton();
+            this.BodyRadioButton = new System.Windows.Forms.RadioButton();
+            this.LegsRadioButton = new System.Windows.Forms.RadioButton();
+            this.RandomStageTimer = new System.Windows.Forms.Timer(this.components);
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.arrow1 = new System.Windows.Forms.Label();
             this.arrow2 = new System.Windows.Forms.Label();
             this.arrow3 = new System.Windows.Forms.Label();
-            this.timer2 = new System.Windows.Forms.Timer(this.components);
+            this.RandomOponentChoise = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
             // label1
@@ -117,7 +117,7 @@
             this.textBox1.ReadOnly = true;
             this.textBox1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
             this.textBox1.Size = new System.Drawing.Size(446, 373);
-            this.textBox1.TabIndex = 6;
+            this.textBox1.TabIndex = 2;
             // 
             // progressBar2
             // 
@@ -129,16 +129,16 @@
             this.progressBar2.TabIndex = 7;
             this.progressBar2.Value = 100;
             // 
-            // button1
+            // StartButton
             // 
-            this.button1.Font = new System.Drawing.Font("Comic Sans MS", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button1.Location = new System.Drawing.Point(494, 587);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(258, 43);
-            this.button1.TabIndex = 8;
-            this.button1.Text = "Запустить раунд!";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.StartButton.Font = new System.Drawing.Font("Comic Sans MS", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.StartButton.Location = new System.Drawing.Point(494, 587);
+            this.StartButton.Name = "StartButton";
+            this.StartButton.Size = new System.Drawing.Size(258, 43);
+            this.StartButton.TabIndex = 1;
+            this.StartButton.Text = "Запустить раунд!";
+            this.StartButton.UseVisualStyleBackColor = true;
+            this.StartButton.Click += new System.EventHandler(this.StartButton_Click);
             // 
             // label5
             // 
@@ -184,92 +184,92 @@
             this.hp2.TabIndex = 12;
             this.hp2.Text = "100";
             // 
-            // label2
+            // Name12
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Comic Sans MS", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label2.Location = new System.Drawing.Point(66, 189);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(70, 42);
-            this.label2.TabIndex = 13;
-            this.label2.Text = "Вы:";
+            this.Name12.AutoSize = true;
+            this.Name12.Font = new System.Drawing.Font("Comic Sans MS", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Name12.Location = new System.Drawing.Point(66, 189);
+            this.Name12.Name = "Name12";
+            this.Name12.Size = new System.Drawing.Size(70, 42);
+            this.Name12.TabIndex = 13;
+            this.Name12.Text = "Вы:";
             // 
-            // label6
+            // Status1
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Comic Sans MS", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label6.Location = new System.Drawing.Point(158, 231);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(139, 42);
-            this.label6.TabIndex = 14;
-            this.label6.Text = "атакуете";
+            this.Status1.AutoSize = true;
+            this.Status1.Font = new System.Drawing.Font("Comic Sans MS", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Status1.Location = new System.Drawing.Point(158, 231);
+            this.Status1.Name = "Status1";
+            this.Status1.Size = new System.Drawing.Size(139, 42);
+            this.Status1.TabIndex = 14;
+            this.Status1.Text = "атакуете";
             // 
-            // label7
+            // Status2
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Comic Sans MS", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label7.Location = new System.Drawing.Point(1044, 231);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(188, 42);
-            this.label7.TabIndex = 16;
-            this.label7.Text = "защищается";
+            this.Status2.AutoSize = true;
+            this.Status2.Font = new System.Drawing.Font("Comic Sans MS", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Status2.Location = new System.Drawing.Point(1044, 231);
+            this.Status2.Name = "Status2";
+            this.Status2.Size = new System.Drawing.Size(188, 42);
+            this.Status2.TabIndex = 16;
+            this.Status2.Text = "защищается";
             // 
-            // label8
+            // Name22
             // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Comic Sans MS", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label8.Location = new System.Drawing.Point(864, 189);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(193, 42);
-            this.label8.TabIndex = 15;
-            this.label8.Text = "Компьютер:";
+            this.Name22.AutoSize = true;
+            this.Name22.Font = new System.Drawing.Font("Comic Sans MS", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Name22.Location = new System.Drawing.Point(864, 189);
+            this.Name22.Name = "Name22";
+            this.Name22.Size = new System.Drawing.Size(193, 42);
+            this.Name22.TabIndex = 15;
+            this.Name22.Text = "Компьютер:";
             // 
-            // radioButton1
+            // HeadRadioButton
             // 
-            this.radioButton1.AutoCheck = false;
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Font = new System.Drawing.Font("Comic Sans MS", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.radioButton1.Location = new System.Drawing.Point(117, 326);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(156, 50);
-            this.radioButton1.TabIndex = 17;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Голова";
-            this.radioButton1.UseVisualStyleBackColor = true;
-            this.radioButton1.Click += new System.EventHandler(this.radioButton1_Click);
+            this.HeadRadioButton.AutoCheck = false;
+            this.HeadRadioButton.AutoSize = true;
+            this.HeadRadioButton.Font = new System.Drawing.Font("Comic Sans MS", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.HeadRadioButton.Location = new System.Drawing.Point(117, 326);
+            this.HeadRadioButton.Name = "HeadRadioButton";
+            this.HeadRadioButton.Size = new System.Drawing.Size(156, 50);
+            this.HeadRadioButton.TabIndex = 17;
+            this.HeadRadioButton.TabStop = true;
+            this.HeadRadioButton.Text = "Голова";
+            this.HeadRadioButton.UseVisualStyleBackColor = true;
+            this.HeadRadioButton.Click += new System.EventHandler(this.HeadRadioButton_Click);
             // 
-            // radioButton2
+            // BodyRadioButton
             // 
-            this.radioButton2.AutoCheck = false;
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Font = new System.Drawing.Font("Comic Sans MS", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.radioButton2.Location = new System.Drawing.Point(117, 383);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(155, 50);
-            this.radioButton2.TabIndex = 18;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Корпус";
-            this.radioButton2.UseVisualStyleBackColor = true;
-            this.radioButton2.Click += new System.EventHandler(this.radioButton2_Click);
+            this.BodyRadioButton.AutoCheck = false;
+            this.BodyRadioButton.AutoSize = true;
+            this.BodyRadioButton.Font = new System.Drawing.Font("Comic Sans MS", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.BodyRadioButton.Location = new System.Drawing.Point(117, 383);
+            this.BodyRadioButton.Name = "BodyRadioButton";
+            this.BodyRadioButton.Size = new System.Drawing.Size(155, 50);
+            this.BodyRadioButton.TabIndex = 18;
+            this.BodyRadioButton.TabStop = true;
+            this.BodyRadioButton.Text = "Корпус";
+            this.BodyRadioButton.UseVisualStyleBackColor = true;
+            this.BodyRadioButton.Click += new System.EventHandler(this.BodyRadioButton_Click);
             // 
-            // radioButton3
+            // LegsRadioButton
             // 
-            this.radioButton3.AutoCheck = false;
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Font = new System.Drawing.Font("Comic Sans MS", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.radioButton3.Location = new System.Drawing.Point(117, 440);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(123, 50);
-            this.radioButton3.TabIndex = 19;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "Ноги";
-            this.radioButton3.UseVisualStyleBackColor = true;
-            this.radioButton3.Click += new System.EventHandler(this.radioButton3_Click);
+            this.LegsRadioButton.AutoCheck = false;
+            this.LegsRadioButton.AutoSize = true;
+            this.LegsRadioButton.Font = new System.Drawing.Font("Comic Sans MS", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.LegsRadioButton.Location = new System.Drawing.Point(117, 440);
+            this.LegsRadioButton.Name = "LegsRadioButton";
+            this.LegsRadioButton.Size = new System.Drawing.Size(123, 50);
+            this.LegsRadioButton.TabIndex = 19;
+            this.LegsRadioButton.TabStop = true;
+            this.LegsRadioButton.Text = "Ноги";
+            this.LegsRadioButton.UseVisualStyleBackColor = true;
+            this.LegsRadioButton.Click += new System.EventHandler(this.LegsRadioButton_Click);
             // 
-            // timer1
+            // RandomStageTimer
             // 
-            this.timer1.Interval = 200;
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            this.RandomStageTimer.Interval = 200;
+            this.RandomStageTimer.Tick += new System.EventHandler(this.RandomStageTimer_Tick);
             // 
             // label3
             // 
@@ -334,11 +334,11 @@
             this.arrow3.Text = "→";
             this.arrow3.Visible = false;
             // 
-            // timer2
+            // RandomOponentChoise
             // 
-            this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
+            this.RandomOponentChoise.Tick += new System.EventHandler(this.RandomOponentChoise_Tick);
             // 
-            // Form1
+            // MainWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -349,18 +349,18 @@
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.radioButton3);
-            this.Controls.Add(this.radioButton2);
-            this.Controls.Add(this.radioButton1);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.LegsRadioButton);
+            this.Controls.Add(this.BodyRadioButton);
+            this.Controls.Add(this.HeadRadioButton);
+            this.Controls.Add(this.Status2);
+            this.Controls.Add(this.Name22);
+            this.Controls.Add(this.Status1);
+            this.Controls.Add(this.Name12);
             this.Controls.Add(this.hp2);
             this.Controls.Add(this.hp1);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.StartButton);
             this.Controls.Add(this.progressBar2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.progressBar1);
@@ -368,11 +368,13 @@
             this.Controls.Add(this.Name1);
             this.Controls.Add(this.round);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "Form1";
+            this.MaximizeBox = false;
+            this.Name = "MainWindow";
             this.Text = "Бойцовский клуб";
-            this.Load += new System.EventHandler(this.Form1_Load);
-            this.Click += new System.EventHandler(this.Form1_Click);
+            this.Load += new System.EventHandler(this.MainWindow_Load);
+            this.Click += new System.EventHandler(this.MainWindow_Click);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -386,26 +388,26 @@
         private System.Windows.Forms.Label Name2;
         private System.Windows.Forms.ProgressBar progressBar1;
         private System.Windows.Forms.ProgressBar progressBar2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button StartButton;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label hp1;
         private System.Windows.Forms.Label hp2;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton3;
-        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Label Name12;
+        private System.Windows.Forms.Label Status1;
+        private System.Windows.Forms.Label Status2;
+        private System.Windows.Forms.Label Name22;
+        private System.Windows.Forms.RadioButton HeadRadioButton;
+        private System.Windows.Forms.RadioButton BodyRadioButton;
+        private System.Windows.Forms.RadioButton LegsRadioButton;
+        private System.Windows.Forms.Timer RandomStageTimer;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label arrow1;
         private System.Windows.Forms.Label arrow2;
         private System.Windows.Forms.Label arrow3;
-        private System.Windows.Forms.Timer timer2;
+        private System.Windows.Forms.Timer RandomOponentChoise;
         public System.Windows.Forms.TextBox textBox1;
     }
 }

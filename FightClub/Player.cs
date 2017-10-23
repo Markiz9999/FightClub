@@ -9,10 +9,11 @@ namespace FightClub
     class Player
     {
         private string name;
-        private int hp = 10;
+        private int hp = 100;
         private BodyParts blocked;
+        private int power = 20;
 
-        public delegate void eventHandler(object sender);
+        public delegate void eventHandler(object sender, PlayerEventArgs args);
 
         public event eventHandler Block;
         public event eventHandler Wound;
@@ -33,17 +34,17 @@ namespace FightClub
         public void GetHit(BodyParts part) {
             if (part != Blocked)
             {
-                hp -= 10;
-                Wound?.Invoke(this);
+                hp -= power;
+                Wound?.Invoke(this, new PlayerEventArgs(Name, hp, power));
 
                 if (hp <= 0)
                 {
                     hp = 0;
-                    Death?.Invoke(this);
+                    Death?.Invoke(this, new PlayerEventArgs(Name, hp, 0));
                 }
             }
             else {
-                Block?.Invoke(this);
+                Block?.Invoke(this, new PlayerEventArgs(Name, hp, 0));
             }
         }
     }

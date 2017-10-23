@@ -9,7 +9,8 @@ namespace FightClub
     static class Program
     {
 
-        public static Form1 form;
+        public static InputName inputName;
+        public static MainWindow mainWindow;
 
         /// <summary>
         /// Главная точка входа для приложения.
@@ -19,8 +20,12 @@ namespace FightClub
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            form = new Form1();
-            Application.Run(form);
+            inputName = new InputName();
+            Application.Run(inputName);
+            if (inputName.Status) {
+                mainWindow = new MainWindow();
+                Application.Run(mainWindow);
+            }
         }
     }
 }
