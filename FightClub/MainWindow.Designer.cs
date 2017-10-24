@@ -381,34 +381,33 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label round;
-        private System.Windows.Forms.Label Name1;
-        private System.Windows.Forms.Label Name2;
-        private System.Windows.Forms.ProgressBar progressBar1;
-        private System.Windows.Forms.ProgressBar progressBar2;
-        private System.Windows.Forms.Button StartButton;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Label hp1;
-        private System.Windows.Forms.Label hp2;
-        private System.Windows.Forms.Label Name12;
-        private System.Windows.Forms.Label Status1;
-        private System.Windows.Forms.Label Status2;
-        private System.Windows.Forms.Label Name22;
-        private System.Windows.Forms.RadioButton HeadRadioButton;
-        private System.Windows.Forms.RadioButton BodyRadioButton;
-        private System.Windows.Forms.RadioButton LegsRadioButton;
-        private System.Windows.Forms.Timer RandomStageTimer;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label arrow1;
-        private System.Windows.Forms.Label arrow2;
-        private System.Windows.Forms.Label arrow3;
-        private System.Windows.Forms.Timer RandomOponentChoise;
         public System.Windows.Forms.TextBox textBox1;
+        public System.Windows.Forms.Label label1;
+        public System.Windows.Forms.Label round;
+        public System.Windows.Forms.Label Name1;
+        public System.Windows.Forms.Label Name2;
+        public System.Windows.Forms.ProgressBar progressBar1;
+        public System.Windows.Forms.ProgressBar progressBar2;
+        public System.Windows.Forms.Button StartButton;
+        public System.Windows.Forms.Label label5;
+        public System.Windows.Forms.TextBox textBox2;
+        public System.Windows.Forms.Label hp1;
+        public System.Windows.Forms.Label hp2;
+        public System.Windows.Forms.Label Name12;
+        public System.Windows.Forms.Label Status1;
+        public System.Windows.Forms.Label Status2;
+        public System.Windows.Forms.Label Name22;
+        public System.Windows.Forms.RadioButton HeadRadioButton;
+        public System.Windows.Forms.RadioButton BodyRadioButton;
+        public System.Windows.Forms.RadioButton LegsRadioButton;
+        public System.Windows.Forms.Timer RandomStageTimer;
+        public System.Windows.Forms.Label label3;
+        public System.Windows.Forms.Label label4;
+        public System.Windows.Forms.Label label9;
+        public System.Windows.Forms.Label arrow1;
+        public System.Windows.Forms.Label arrow2;
+        public System.Windows.Forms.Label arrow3;
+        public System.Windows.Forms.Timer RandomOponentChoise;
     }
 }
 
